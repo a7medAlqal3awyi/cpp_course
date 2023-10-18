@@ -38,6 +38,10 @@ int main()
      v3.push_back(100);
     cout << "THE vector size is "<<v3.size();
 
-
+ cout << "\n============\n";
+    for (int i = 0; i < v3.size(); i++)
+    {
+        cout << v3.at(i) << " ";
+    }
 
 }
