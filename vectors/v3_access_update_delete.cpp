@@ -46,7 +46,23 @@ int main()
 
     nums.pop_back();
     cout << nums.size() << "\n";
-    cout <<"Last element "<<nums.at(4);
+    cout << "Last element " << nums.at(4);
+
+    cout << "\n********************************\n";
+
+    vector<int> test = {8, 9, 10, 11, 12};
+    cout << test.at(2) << "\n";
+    cout << test.back() << "\n";
+    cout << test.front() << "\n";
+    cout << test.capacity() << "\n";
+    test.pop_back();
+    test.pop_back();
+    cout << test.size() << "\n";
+    test.push_back(300);
+    test.push_back(200);
+    test.push_back(100);
+    cout << test.back()<<"\n";
+    cout << test.size() << "\n";
 
     return 0;
 }
