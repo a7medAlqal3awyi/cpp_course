@@ -14,7 +14,7 @@ int main()
 
     *ptr = 50;
 
-    // the value will change but the address not  
+    // the value will change but the address not
     cout << "Value " << num << "\n";
     cout << "Address " << &num << "\n";
     cout << "Address " << ptr << "\n";
