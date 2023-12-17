@@ -6,7 +6,7 @@ int main()
 
     /*
     c-style array==>>       int   arr  []  = {1,2,3,4};
-    c-style array==>>    datatype name [] = {};
+    c-style array==>>       datatype name [] = {};
 
     Timplate <data type , size > name ={}
     */
