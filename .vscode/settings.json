@@ -45,7 +45,8 @@
         "array": "cpp",
         "algorithm": "cpp",
         "vector": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "unordered_map": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

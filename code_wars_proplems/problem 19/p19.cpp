@@ -1,23 +1,24 @@
-#include <iostream >
+//https://www.codewars.com/kata/56efc695740d30f963000557/train/cpp
+#include <iostream>
 using namespace std;
-string to_alternating_case(string str)
+
+string to_alternating_case(const string& str)
 {
-    string updated ;
-    for (int i = 0; i < str.length(); i++)
+  string newStr;
+  for (int i = 0; i < str.length(); i++) 
+  {
+    if (isupper(str[i])) 
     {
-        if (int(str[i]) >= 65 && int(str[i] <= 90))
-        {
-            updated += char(int(str[i] + 32));
-        }
-        else
-        {
-            updated  += char(int(str[i] - 32));
-        }
+      newStr += tolower(str[i]);
+    } 
+    else if (islower(str[i]))
+    {
+      newStr += toupper(str[i]);
     }
-    cout << updated  ;
-    return str;
-}
-int main()
-{
-    to_alternating_case("AhMEdK  haledEW");
+    else 
+    {
+      newStr += str[i];
+    }
+  }
+	return newStr;
 }
