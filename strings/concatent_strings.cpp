@@ -1,15 +1,18 @@
 #include <iostream>
-#include <cstring>
 using namespace std;
+int getRealFloor(int f)
+{
+    if (f < 0)
+        return f;
+    else if (f = 0)
+        return 0;
+    else if (f > 0 && f < 13)
+        return f - 1;
+    else if (f > 13)
+        return f - 2;
+    return 0;
+}
 int main()
 {
-    char fname[] = "Ahmed ";
-    char lname[] = "khaled";
-    cout << fname << lname << "\n";
-    cout << strcat(fname, lname) << "\n";
-    cout << fname<< "\n";
-    string first="Ahmed ";
-    string last="Ahmed";
-    cout << first.append(last)<< "\n";
-    return 0;
+    getRealFloor(4);
 }
